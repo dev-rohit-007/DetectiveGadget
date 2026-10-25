@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "repository": {
+    "path": "/absolute/path/to/swift/repository",
+    "defaultBaseBranch": "development"
+  },
+  "tools": {
+    "preferredGitHubCLI": "gh",
+    "allowedInvestigationCLIs": [
+      "claude",
+      "gpt",
+      "cursor"
+    ]
+  },
+  "investigation": {
+    "swiftOnly": true,
+    "requireApprovalBeforeChanges": true,
+    "requireApprovalBeforePullRequest": true,
+    "maxInvestigationRounds": 3,
+    "allowUncommittedChanges": false
+  },
+  "verification": {
+    "runTests": true,
+    "runBuild": true
+  },
+  "jira": {
+    "fetchCommand": ""
+  }
+}
